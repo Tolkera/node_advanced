@@ -1246,13 +1246,13 @@ When you encounter bugs caused by changing components, you will gain a deeper in
 If you’d like to test components in isolation from the child components they render, we recommend using [`shallow()` rendering API](http://airbnb.io/enzyme/docs/api/shallow.html) from [Enzyme](http://airbnb.io/enzyme/). To install it, run:
 
 ```sh
-npm install --save enzyme react-test-renderer
+npm install --save enzyme react-tests-renderer
 ```
 
 Alternatively you may use `yarn`:
 
 ```sh
-yarn add enzyme react-test-renderer
+yarn add enzyme react-tests-renderer
 ```
 
 You can write a smoke test with it too:
@@ -1405,7 +1405,7 @@ set CI=true&&npm run build
 ##### Linux, macOS (Bash)
 
 ```bash
-CI=true npm test
+CI=true npm tests
 ```
 
 ```bash
@@ -1426,7 +1426,7 @@ By default, the `package.json` of the generated project looks like this:
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom"
+    "test": "react-scripts tests --env=jsdom"
 ```
 
 If you know that none of your tests depend on [jsdom](https://github.com/tmpvar/jsdom), you can safely remove `--env=jsdom`, and your tests will run faster:
